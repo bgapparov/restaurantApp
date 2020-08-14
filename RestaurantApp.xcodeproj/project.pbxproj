@@ -13,6 +13,13 @@
 		923303A124D08D0A00A703EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9233039F24D08D0A00A703EF /* Main.storyboard */; };
 		923303A324D08D0E00A703EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923303A224D08D0E00A703EF /* Assets.xcassets */; };
 		923303A624D08D0E00A703EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923303A424D08D0E00A703EF /* LaunchScreen.storyboard */; };
+		929326C224E5FC44005ADAFB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326C124E5FC44005ADAFB /* BaseView.swift */; };
+		929326C624E5FEAC005ADAFB /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326C524E5FEAC005ADAFB /* DetailsFoodView.swift */; };
+		929326C824E602CD005ADAFB /* DetailFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326C724E602CD005ADAFB /* DetailFoodViewController.swift */; };
+		929326CE24E603C7005ADAFB /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326CD24E603C7005ADAFB /* RestaurantTableViewController.swift */; };
+		929326D024E60401005ADAFB /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326CF24E60401005ADAFB /* RestaurantTableViewCell.swift */; };
+		929326D424E63346005ADAFB /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326D324E63346005ADAFB /* LocationView.swift */; };
+		929326D624E6340F005ADAFB /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929326D524E6340F005ADAFB /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		923303A224D08D0E00A703EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923303A524D08D0E00A703EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923303A724D08D0E00A703EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929326C124E5FC44005ADAFB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		929326C524E5FEAC005ADAFB /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
+		929326C724E602CD005ADAFB /* DetailFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFoodViewController.swift; sourceTree = "<group>"; };
+		929326CD24E603C7005ADAFB /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		929326CF24E60401005ADAFB /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		929326D324E63346005ADAFB /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		929326D524E6340F005ADAFB /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		9233039824D08D0A00A703EF /* RestaurantApp */ = {
 			isa = PBXGroup;
 			children = (
+				929326C024E5FC2B005ADAFB /* Screen */,
 				9233039924D08D0A00A703EF /* AppDelegate.swift */,
 				9233039B24D08D0A00A703EF /* SceneDelegate.swift */,
 				9233039D24D08D0A00A703EF /* ViewController.swift */,
@@ -65,6 +80,68 @@
 				923303A724D08D0E00A703EF /* Info.plist */,
 			);
 			path = RestaurantApp;
+			sourceTree = "<group>";
+		};
+		929326C024E5FC2B005ADAFB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				929326D124E632EC005ADAFB /* Location */,
+				929326C924E60336005ADAFB /* List */,
+				929326C324E5FE7E005ADAFB /* Details */,
+				929326C124E5FC44005ADAFB /* BaseView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		929326C324E5FE7E005ADAFB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				929326C424E5FE8D005ADAFB /* View */,
+				929326C724E602CD005ADAFB /* DetailFoodViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		929326C424E5FE8D005ADAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929326C524E5FEAC005ADAFB /* DetailsFoodView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		929326C924E60336005ADAFB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				929326CC24E60395005ADAFB /* View */,
+				929326CD24E603C7005ADAFB /* RestaurantTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		929326CC24E60395005ADAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929326CF24E60401005ADAFB /* RestaurantTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		929326D124E632EC005ADAFB /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				929326D224E6331D005ADAFB /* View */,
+				929326D524E6340F005ADAFB /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		929326D224E6331D005ADAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				929326D324E63346005ADAFB /* LocationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +217,14 @@
 			files = (
 				9233039E24D08D0A00A703EF /* ViewController.swift in Sources */,
 				9233039A24D08D0A00A703EF /* AppDelegate.swift in Sources */,
+				929326CE24E603C7005ADAFB /* RestaurantTableViewController.swift in Sources */,
+				929326C624E5FEAC005ADAFB /* DetailsFoodView.swift in Sources */,
+				929326D024E60401005ADAFB /* RestaurantTableViewCell.swift in Sources */,
+				929326D624E6340F005ADAFB /* LocationViewController.swift in Sources */,
 				9233039C24D08D0A00A703EF /* SceneDelegate.swift in Sources */,
+				929326C224E5FC44005ADAFB /* BaseView.swift in Sources */,
+				929326D424E63346005ADAFB /* LocationView.swift in Sources */,
+				929326C824E602CD005ADAFB /* DetailFoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
