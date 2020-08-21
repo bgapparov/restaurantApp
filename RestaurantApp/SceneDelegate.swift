@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import Moya
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     let locationService = LocationService()
     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    let service = MoyaProvider<YelpService.BusinessesProvider>()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        service.request(.search(lat: 42.361145, long: -71.057083)) { (result) in
+            switch result {
+            case .success(let response):
+                print(try? JSONSerialization.jsonObject(with: response.data, options: []))
+            case .failure(let error):
+                print("Error \(error)")
+            }
+        }
         
         guard let windowScene = scene as? UIWindowScene else { return }
         let locationViewController = storyBoard.instantiateViewController (withIdentifier: "LocationViewController") as! LocationViewController
